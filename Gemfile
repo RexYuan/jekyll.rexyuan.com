@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.3"
+gem "rouge", "~> 4.5"
 gem "jekyll-remote-theme" # Required for GitHub Pages
 gem "jekyll-postfiles"    # Enables post-specific image folders
 

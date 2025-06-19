@@ -1,6 +1,6 @@
 # Site Identity
 title: Rex Yuan's Blog
-description: Rex Yuan's posts.
+description: Rex Yuan's writings.
 url: https://jekyll.rexyuan.com
 baseurl: ""
 
@@ -45,6 +45,15 @@ permalink: /:year/:month/:day/:title/
 # Markdown settings
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
 
 # Plugins — declared here only to avoid override conflicts
 plugins:

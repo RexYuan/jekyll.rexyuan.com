@@ -21,7 +21,7 @@ mask_icon_color: "#5bbad5"
 
 # Open Graph
 og_type: website
-og_image: /images/og-image.png
+og_image: /assets/images/og-image.png
 og_image_type: image/png
 og_image_width: 1200
 og_image_height: 630
@@ -34,28 +34,33 @@ profile:
   username: rexyuan
   gender: male
 
-# Theme metadata (for footer)
+# Theme metadata (for footer or display)
 theme_repo: "https://github.com/RexYuan/rexyuan.com-theme"
 theme_license_url: "https://unlicense.org"
 theme_license_name: "Unlicense"
 
-# Build Settings
-future: true
-show_drafts: false
+# Permalink structure for blog posts
+permalink: /:year/:month/:day/:title/
 
-# Permalink structure
-permalink: /:year/:month/:day/:title.html
-
-# Markdown Settings
+# Markdown settings
 markdown: kramdown
 highlighter: rouge
+
+# Plugins — declared here only to avoid override conflicts
+plugins:
+  - jekyll-postfiles
+  - jekyll-remote-theme
+
+# Build settings
+future: true         # Allow future-dated posts to show
+show_drafts: false   # Set true if you want to see drafts locally
 
 # Collections
 collections:
   posts:
     output: true
 
-# Default Front Matter
+# Default layout for posts
 defaults:
   - scope:
       path: ""

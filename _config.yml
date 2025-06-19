@@ -1,0 +1,64 @@
+# Site Identity
+title: Rex Yuan's Blog
+description: Rex Yuan's posts.
+url: https://jekyll.rexyuan.com
+baseurl: ""
+
+# Author Information
+author:
+  name: Rex Yuan
+  email: hello@rexyuan.com
+
+# Localization
+lang: en-US
+locale: en_US
+
+# SEO Metadata
+keywords: Rex Yuan, Blog
+theme_color: "#EEEEEE"
+ms_tile_color: "#00aba9"
+mask_icon_color: "#5bbad5"
+
+# Open Graph
+og_type: website
+og_image: /images/og-image.png
+og_image_type: image/png
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "The black text Rex Yuan in Renogare"
+
+# Social profile data
+profile:
+  first_name: Rex
+  last_name: Yuan
+  username: rexyuan
+  gender: male
+
+# Theme metadata (for footer)
+theme_repo: "https://github.com/RexYuan/rexyuan.com-theme"
+theme_license_url: "https://unlicense.org"
+theme_license_name: "Unlicense"
+
+# Build Settings
+future: true
+show_drafts: false
+
+# Permalink structure
+permalink: /:year/:month/:day/:title.html
+
+# Markdown Settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post

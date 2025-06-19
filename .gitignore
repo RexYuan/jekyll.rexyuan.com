@@ -1,0 +1,31 @@
+# Ignore build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore dependencies
+vendor/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Ruby files if using bundler
+.bundle/
+Gemfile.lock
+
+# Ignore log files
+log/
+
+# Ignore IDE/editor-specific files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+*.idea/
+.vscode/
+
+# Ignore dotenv files (optional)
+.env

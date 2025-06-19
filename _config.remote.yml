@@ -1,0 +1,4 @@
+remote_theme: RexYuan/rexyuan.com-theme
+
+plugins:
+  - jekyll-remote-theme

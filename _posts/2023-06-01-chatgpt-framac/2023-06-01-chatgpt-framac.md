@@ -67,7 +67,7 @@ int main() {
 
 Let’s compile and run and test it.
 
-```
+```console
 $ gcc example.c -o a.o; ./a.o
 Before sorting: 4 2 3 1
 After sorting: 1 2 3 4

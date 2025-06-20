@@ -1,18 +1,28 @@
 #!/bin/bash
 set -e
 
-# Auto values
-DATE=$(date +%F)
+if [ -z "$1" ]; then
+  echo "Usage: $0 YYYY-MM-DD-slug"
+  exit 1
+fi
+
+# Extract date and slug from argument
+INPUT="$1"
+DATE="${INPUT:0:10}"
+SLUG="${INPUT:11}"
+
+# Use dummy values
 TITLE="Title"
 SUBTITLE="Subtitle"
 
-# Generate slug from dummy title + date
-SLUG="post-slug"
-DIR="_posts/${DATE}-${SLUG}"
-FILE="${DIR}/${DATE}-${SLUG}.md"
+# Paths
+DIR="_posts/${INPUT}"
+FILE="${DIR}/${INPUT}.md"
 
+# Create directory
 mkdir -p "$DIR"
 
+# Write post file
 cat > "$FILE" <<EOF
 ---
 layout: post
@@ -23,4 +33,4 @@ date: $DATE
 ---
 EOF
 
-echo "✅ Created post: $FILE"
+echo "Created post: $FILE"

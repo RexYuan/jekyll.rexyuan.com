@@ -1,9 +1,9 @@
-.youtube-button-wrapper {
+.button-wrapper {
   text-align: center;
   margin: 1.5em 0;
 }
 
-.youtube-button {
+.button {
   display: inline-block;
   padding: 0.6em 1.4em;
   border-radius: 999px;
@@ -15,7 +15,7 @@
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.youtube-button:hover {
+.button:hover {
   background: #d0d0d0;
   color: #000;
 }
